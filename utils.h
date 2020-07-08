@@ -23,3 +23,7 @@ char ** get_input(char * input){
     command[index] = NULL; // last index must be null for exc
     return command;
 }
+
+int cd(char * path){
+    return chdir(path);
+}
